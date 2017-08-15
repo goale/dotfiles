@@ -37,42 +37,42 @@ filter_unmatched_urls = true
 # Base16 Gruvbox dark, pale
 # Author: Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
 
-foreground      = #ffffff
-foreground_bold = #ffffff
-cursor          = #ffffff
+# foreground      = #ffffff
+# foreground_bold = #ffffff
+# cursor          = #ffffff
 background      = rgba(38,38,38,.85)
 
 # 16 color space
 
 # Black, Gray, Silver, White
-color0  = #2e3440
-color8  = #707f9c
-color7  = #707f9c
-color15 = #ffffff
+# color0  = #2e3440
+# color8  = #707f9c
+# color7  = #707f9c
+# color15 = #ffffff
 
-# Red
-color1  = #84d498
-color9  = #84d498
+# # Red
+# color1  = #84d498
+# color9  = #84d498
 
-# Green
-color2  = #1cfa67
-color10 = #1cfa67
+# # Green
+# color2  = #1cfa67
+# color10 = #1cfa67
 
-# Yellow
-color3  = #85fa8d
-color11 = #85fa86
+# # Yellow
+# color3  = #85fa8d
+# color11 = #85fa86
 
-# Blue
-color4  = #1aa662
-color12 = #1aa662
+# # Blue
+# color4  = #1aa662
+# color12 = #1aa662
 
-# Purple
-color5  = #23ff77
-color13 = #23ff77
+# # Purple
+# color5  = #23ff77
+# color13 = #23ff77
 
-# Teal
-color6  = #50fa7b
-color14 = #50fa7b
+# # Teal
+# color6  = #50fa7b
+# color14 = #50fa7b
 
 # Extra colors
 #color16 = #ff8700
