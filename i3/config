@@ -215,6 +215,9 @@ for_window [class="Xfburn"] floating enable
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
 
+# border for windows
+for_window [class=".*"] border pixel 2
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 
@@ -343,51 +346,23 @@ set_from_resource $term_color15    color15
 set_from_resource $i3_background i3.background
 set_from_resource $i3_text i3.foreground
 set_from_resource $i3_separator i3.cursorColor
-set_from_resource $i3_color1 i3.color1
-set_from_resource $i3_color2 i3.color2
-set_from_resource $i3_color3 i3.color3
-set_from_resource $i3_color4 i3.color4
-set_from_resource $i3_color5 i3.color5
-set_from_resource $i3_color6 i3.color6
-set_from_resource $i3_color7 i3.color7
-set_from_resource $i3_color8 i3.color8
-set_from_resource $i3_color9 i3.color9
-set_from_resource $i3_color10 i3.color10
-set_from_resource $i3_color11 i3.color11
-set_from_resource $i3_color12 i3.color12
-set_from_resource $i3_color13 i3.color13
-set_from_resource $i3_color14 i3.color14
-set_from_resource $i3_color15 i3.color15
-set_from_resource $i3_color16 i3.color16
+set_from_resource $i3_color1 *.color0
+set_from_resource $i3_color2 *.color1
+set_from_resource $i3_color3 i3.color2
+set_from_resource $i3_color4 i3.color3
+set_from_resource $i3_color5 i3.color4
+set_from_resource $i3_color6 i3.color5
+set_from_resource $i3_color7 i3.color6
+set_from_resource $i3_color8 i3.color7
+set_from_resource $i3_color9 i3.color8
+set_from_resource $i3_color10 i3.color9
+set_from_resource $i3_color11 i3.color10
+set_from_resource $i3_color12 i3.color11
+set_from_resource $i3_color13 i3.color12
+set_from_resource $i3_color14 i3.color13
+set_from_resource $i3_color15 i3.color14
+set_from_resource $i3_color16 i3.color15
 set_from_resource $i3_color17 i3.color0
-
-# Start i3bar to display a workspace bar (plus the system information i3status if available)
-#bar {
-#	status_command i3status
-#	position bottom
-
-## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
-#	tray_output primary
-#	tray_output eDP1
-
-#	bindsym button4 nop
-#	bindsym button5 nop
-#	font xft:Noto Sans 10.5
-#	strip_workspace_numbers yes
-
-#	colors {
-#       background $transparent
-#        background $i3_background
-#        statusline $i3_text
-#        separator  $i3_separator
-
-#                                  border  backgr. text
-#        focused_workspace   $i3_color1  $i3_color4  $i3_text
-#        active_workspace    $i3_color2  $i3_color3  $i3_color5
-#        inactive_workspace  $i3_color2  $i3_color3  $i3_color6
-#        urgent_workspace    $i3_color4  $i3_color5  $i3_color7
-#    }
-#}
 
 exec --no-startup-id polybar main
 
@@ -396,7 +371,7 @@ exec --no-startup-id polybar main
 
 # Theme colors
 # class                 border      backgr.     text        indic.      child_border
-client.focused          $i3_color8  $i3_color8  $i3_color11 $i3_color12
+client.focused          #be7369     #be7369     #ffffff     #be7369
 client.focused_inactive $i3_color9  $i3_color9  $i3_color4  $i3_color10
 client.unfocused        $i3_color9  $i3_color9  $i3_color4  $i3_color10
 client.urgent           $i3_color13 $i3_color12 $i3_color4  $i3_color14
