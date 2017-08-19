@@ -439,3 +439,6 @@ mode "$mode_gaps_outer" {
 # Keyboard layouts
 exec_always --no-startup-id "setxkbmap -layout us,ru"
 exec_always --no-startup-id "setxkbmap -option 'grp:alt_shift_toggle'"
+
+# turn off display after 5 minutes
+exec xset dpms 300
