@@ -40,47 +40,47 @@ filter_unmatched_urls = true
 # foreground      = #ffffff
 # foreground_bold = #ffffff
 # cursor          = #ffffff
-background      = rgba(38,38,38,.85)
 
-# 16 color space
+[colors]
 
-# Black, Gray, Silver, White
-# color0  = #2e3440
-# color8  = #707f9c
-# color7  = #707f9c
-# color15 = #ffffff
+# special
+foreground      = #546273
+foreground_bold = #546273
+cursor          = #546273
+#background      = #2a2d34
+background      = rgba(45,45,52,.9)
 
-# # Red
-# color1  = #84d498
-# color9  = #84d498
+# black
+color0  = #1c1c26
+color8  = #4f525b
 
-# # Green
-# color2  = #1cfa67
-# color10 = #1cfa67
+# red
+color1  = #be7369
+color9  = #be7369
 
-# # Yellow
-# color3  = #85fa8d
-# color11 = #85fa86
+# green
+color2  = #b4bf72
+color10 = #b4bf72
 
-# # Blue
-# color4  = #1aa662
-# color12 = #1aa662
+# yellow
+color3  = #e3be78
+color11 = #e3be78
 
-# # Purple
-# color5  = #23ff77
-# color13 = #23ff77
+# blue
+color4  = #a69fcb
+color12 = #a69fcb
 
-# # Teal
-# color6  = #50fa7b
-# color14 = #50fa7b
+# magenta
+color5  = #cb95ad
+color13 = #cb95ad
 
-# Extra colors
-#color16 = #ff8700
-#color17 = #d65d0e
-#color18 = #3a3a3a
-#color19 = #4e4e4e
-#color20 = #949494
-#color21 = #d5c4a1
+# cyan
+color6  = #afcbcf
+color14 = #afcbcf
+
+# white
+color7  = #a8b5d4
+color15 = #ccd5eb
 
 [hints]
 #font = Monospace 12
