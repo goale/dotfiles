@@ -15,9 +15,6 @@ white = #ffffff
 
 [bar/main]
 monitor = ${env:MONITOR:DVI-D-0}
-#width = 98%
-#offset-x = 16
-#offset-y = 16
 height = 38
 radius = 0.0
 
@@ -40,17 +37,11 @@ font-4 = Noto Sans CJK JP;3
 
 modules-left = powermenu i3 xwindow
 modules-center = 
-# modules-right = filesystem xbacklight volume xkeyboard memory cpu wlan eth battery temperature date powermenu
 modules-right = xkeyboard memory date
 
 tray-position = right
 tray-detached = false
 tray-padding = 2
-#tray-offset-x = 0
-;wm-restack = bspwm
-#wm-restack = i3
-
-#override-redirect = true
 
 [module/xwindow]
 type = internal/xwindow
@@ -160,9 +151,6 @@ label = %percentage%%
 type = internal/memory
 interval = 15
 
-ram = 
-ram-alt = %gb_used%
-
 label =  %gb_used%
 
 [module/wlan]
@@ -175,10 +163,6 @@ format-connected-underline = #9f78e1
 label-connected = %essid%
 
 format-disconnected =
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
-;label-disconnected-foreground = ${colors.foreground-alt}
 
 ramp-signal-0 = 
 ramp-signal-1 = 
@@ -256,18 +240,18 @@ format-discharging = <ramp-capacity> <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
 
 format-full-prefix = " "
-format-full-prefix-foreground = ${colors.foreground-alt}
+format-full-prefix-foreground = ${colors.white}
 format-full-underline = ${self.format-charging-underline}
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
 ramp-capacity-2 = 
-ramp-capacity-foreground = ${colors.foreground-alt}
+ramp-capacity-foreground = ${colors.white}
 
 animation-charging-0 = 
 animation-charging-1 = 
 animation-charging-2 = 
-animation-charging-foreground = ${colors.foreground-alt}
+animation-charging-foreground = ${colors.white}
 animation-charging-framerate = 750
 
 [module/temperature]
