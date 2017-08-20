@@ -1,24 +1,23 @@
 rofi.modi: window,drun,run
 
 rofi.fullscreen: true
-rofi.padding: 370
+rofi.padding: 300
 
-rofi.font:	Iosevka 24
+rofi.font: Iosevka 32
 
-rofi.separator-style: none
+rofi.separator-style: solid
 rofi.hide-scrollbar: true
 rofi.bw: 0
 
-rofi.display-drun: run
-rofi.display-run: exec
+rofi.display-drun: Run
+rofi.display-run: Exec
 
-rofi.terminal: termite
+rofi.terminal: urxvt
 
-! ------------------------------------------------------------------------------
-! ROFI Color theme
-! ------------------------------------------------------------------------------
+!Colors
+
 rofi.color-enabled: true
-rofi.color-window: argb:d42e3440, argb:0000000, #1aa662
-rofi.color-normal: argb:1000000, #84d498, argb:0000000, #23ff77, #2e3440
-rofi.color-active: argb:0000000, #50fa7b, argb:0000000, #85fa86, #2e3440
-rofi.color-urgent: argb:0000000, #1aa662, argb:0000000, #1aa662, #2e3440
+rofi.color-window: argb:af2a2d34, argb:af2a2d34, #be7369
+rofi.color-normal: argb:0000000, #a8b5d4, argb:0000000, argb:0000000, #be7369
+rofi.color-active: argb:0000000, #a8b5d4, argb:0000000, argb:0000000, #a69fcb
+rofi.color-urgent: argb:0000000, #a8b5d4, argb:0000000, argb:0000000, #cb95ad
