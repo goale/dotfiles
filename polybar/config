@@ -14,7 +14,8 @@ green = #50fa7b
 white = #ffffff
 
 [bar/main]
-monitor = ${env:MONITOR:DVI-D-0}
+monitor = ${env:MONITOR:eDP1}
+dpi = 140
 height = 32
 radius = 0.0
 
