@@ -8,21 +8,21 @@
 ;=====================================================
 
 [colors]
-bg = #2a2d34
-inactive = #707f9c
-accent = #be7369
-white = #ffffff
+bg = #2e3440
+inactive = #e5e9f0
+accent = #3b4253
+white = #e5e9f0
 
 [bar/main]
 monitor = ${env:MONITOR:DVI-D-0}
-height = 38
+height = 32
 radius = 0.0
 
 background = ${colors.bg}
 foreground = ${colors.white}
 
-border-bottom-size = 2
-border-color = ${colors.accent}
+border-bottom-size = 1
+border-color = #1a1d24
 
 module-margin-left = 1
 module-margin-right = 1
@@ -82,9 +82,9 @@ label-mode-background = ${colors.white}
 
 ; focused = Active workspace on focused monitor
 label-focused = %name%
-label-focused-background = ${colors.bg}
-label-focused-foreground = ${colors.accent}
-label-focused-underline = ${colors.accent}
+label-focused-background = ${colors.accent}
+label-focused-foreground = ${colors.white}
+label-focused-underline = ${colors.white}
 label-focused-padding = 2
 
 ; unfocused = Inactive workspace on any monitor
@@ -282,7 +282,7 @@ label-separator = "  "
 format-padding = 2
 
 format-foreground = ${colors.bg}
-format-background = ${colors.accent}
+format-background = #a3be8c
 
 menu-0-0 = ""
 menu-0-0-exec = menu-open-1
