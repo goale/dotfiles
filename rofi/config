@@ -12,12 +12,12 @@ rofi.bw: 0
 rofi.display-drun: Run
 rofi.display-run: Exec
 
-rofi.terminal: urxvt
+rofi.terminal: termite
 
 !Colors
 
 rofi.color-enabled: true
-rofi.color-window: argb:af2a2d34, argb:af2a2d34, #be7369
-rofi.color-normal: argb:0000000, #a8b5d4, argb:0000000, argb:0000000, #be7369
-rofi.color-active: argb:0000000, #a8b5d4, argb:0000000, argb:0000000, #a69fcb
-rofi.color-urgent: argb:0000000, #a8b5d4, argb:0000000, argb:0000000, #cb95ad
+rofi.color-window: argb:af2a2d34, argb:af2a2d34, #bf616a
+rofi.color-normal: argb:0000000, #e5e9f0, argb:0000000, argb:0000000, #bf616a
+rofi.color-active: argb:0000000, #e5edf0, argb:0000000, argb:0000000, #a69fcb
+rofi.color-urgent: argb:0000000, #e5edf0, argb:0000000, argb:0000000, #cb95ad
