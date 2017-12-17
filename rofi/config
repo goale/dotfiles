@@ -18,6 +18,6 @@ rofi.terminal: termite
 
 rofi.color-enabled: true
 rofi.color-window: argb:af2a2d34, argb:af2a2d34, #bf616a
-rofi.color-normal: argb:0000000, #e5e9f0, argb:0000000, argb:0000000, #bf616a
-rofi.color-active: argb:0000000, #e5edf0, argb:0000000, argb:0000000, #a69fcb
-rofi.color-urgent: argb:0000000, #e5edf0, argb:0000000, argb:0000000, #cb95ad
+rofi.color-normal: argb:00000000, #e5e9f0, argb:00000000, argb:00000000, #bf616a
+rofi.color-active: argb:00000000, #e5edf0, argb:00000000, argb:00000000, #a69fcb
+rofi.color-urgent: argb:00000000, #e5edf0, argb:00000000, argb:00000000, #cb95ad

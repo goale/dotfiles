@@ -8,7 +8,7 @@ set $mod Mod4
 # workspace_layout tabbed <stacking|tabbed>
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-new_window pixel 1
+new_window none
 new_float normal
 
 # Hide borders
@@ -16,7 +16,6 @@ hide_edge_borders both
 
 # change borders
 bindsym $mod+u border none
-bindsym $mod+y border pixel 1
 bindsym $mod+n border normal
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -138,14 +137,14 @@ bindsym $mod+Ctrl+Left workspace prev
 # to display names or symbols instead of plain workspace numbers you can use
 # something like: set $ws1 1:mail
 #                 set $ws2 2:
-set $ws1 1:
-set $ws2 2:
-set $ws3 3:
-set $ws4 4:
-set $ws5 5:
-set $ws6 6:
-set $ws7 7:
-set $ws8 8:
+set $ws1 1:term
+set $ws2 2:web
+set $ws3 3:code
+set $ws4 4:file
+set $ws5 5:social
+set $ws6 6:art
+set $ws7 7:doc
+set $ws8 8:misc
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -216,7 +215,7 @@ for_window [class="Xfburn"] floating enable
 for_window [urgent=latest] focus
 
 # border for windows
-for_window [class=".*"] border pixel 1
+for_window [class=".*"] border none
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -278,12 +277,12 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id manjaro-hello
 exec --no-startup-id hsetroot -solid "#4C566A"
 exec --no-startup-id nm-applet
-exec --no-startup-id xfce4-power-manager
-exec --no-startup-id pamac-tray
-exec --no-startup-id clipit
+#exec --no-startup-id xfce4-power-manager
+#exec --no-startup-id pamac-tray
+#exec --no-startup-id clipit
 # exec --no-startup-id blueman
 # exec_always --no-startup-id sbxkb
-# exec --no-startup-id start_conky_green
+exec --no-startup-id start_conky_green
 exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
@@ -323,20 +322,20 @@ exec --no-startup-id polybar main
 
 # Theme colors
 # class                 border      backgr.     text        indic.      child_border
-client.focused          #1a1d24     #1a1d24     #ffffff     #1a1d24
-client.focused_inactive $i3_color9  $i3_color9  $i3_color4  $i3_color10
-client.unfocused        $i3_color9  $i3_color9  $i3_color4  $i3_color10
-client.urgent           $i3_color13 $i3_color12 $i3_color4  $i3_color14
-client.placeholder      $i3_color15 $i3_color17 $i3_color16 $i3_color15
+#client.focused          #1a1d24     #1a1d24     #ffffff     #1a1d24
+#client.focused_inactive $i3_color9  $i3_color9  $i3_color4  $i3_color10
+#client.unfocused        $i3_color9  $i3_color9  $i3_color4  $i3_color10
+#client.urgent           $i3_color13 $i3_color12 $i3_color4  $i3_color14
+#client.placeholder      $i3_color15 $i3_color17 $i3_color16 $i3_color15
 
-client.background       $i3_background
+#client.background       $i3_background
 
 #############################
 ### settings for i3-gaps: ###
 #############################
 
 # Set inner/outer gaps
-gaps inner 16
+gaps inner 10
 # gaps outer -4
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
